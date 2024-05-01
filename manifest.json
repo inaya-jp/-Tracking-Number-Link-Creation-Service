@@ -1,0 +1,14 @@
+{
+  "name"              : "追跡番号リンク作成サイト | ご依頼の荷物を追跡するリンクを簡単作成",
+  "short_name"        : "追跡番号リンク作成",
+  "description"       : "追跡番号を入力して、運送会社の追跡ページへリンクを作成します。ご依頼の荷物を簡単に追跡できる便利なサイトです。",
+  "start_url"         : "/?utm_source=apple&utm_medium=pwa",
+  "display"           : "standalone",
+  "background_color"  : "#f0f0f0",
+  "theme_color"       : "#007bff",
+  "icons": [{
+      "src"           : "/icon-512.png",
+      "sizes"         : "512x512",
+      "type"          : "image/png"
+    }]
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>追跡番号リンク作成サイト | ご依頼の荷物を追跡するリンクを簡単作成</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="追跡番号を入力して、運送会社の追跡ページへリンクを作成します。ご依頼の荷物を簡単に追跡できる便利なサイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yanaitaketo"> <!-- ここにTwitterのユーザー名を入力 -->
+    <meta name="twitter:title" content="追跡番号リンク作成サイト | ご依頼の荷物を追跡するリンクを簡単作成">
+    <meta name="twitter:description" content="追跡番号を入力して、運送会社の追跡ページへリンクを作成します。ご依頼の荷物を簡単に追跡できる便利なサイトです。">
+    <meta name="twitter:image" content="https://www.trackings.jp/trackings.png">
+    <link rel="stylesheet" href="css/social-button.css" />
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/icon-512.png">
+    <script src="js/social-button.js" async></script>
+    <link rel="manifest" href="/manifest.json">
+<script src="//accaii.com/tracingsnejp/script.js" async></script><noscript><img src="//accaii.com/tracingsnejp/script?guid=on"></noscript>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9704812408336522"
+     crossorigin="anonymous"></script>
+<script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>
+    <style>
+        body {
+            font-family: "新丸ゴ R", "Shin Maru Go Regular" , Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            font-family: "新丸ゴ R", "Shin Maru Go Regular" , Arial, sans-serif;
+            display: block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #links {
+            margin-top: 20px;
+        }
+
+        #links p {
+            margin-bottom: 10px;
+        }
+
+        #links a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #links a:hover {
+            background-color: #0056b3;
+        }
+
+        #info-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .info {
+            flex: 1;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+            text-align: center;
+            margin-right: 10px; /* 間隔を調整するためのマージン */
+        }
+
+        .info:last-child {
+            margin-right: 0; /* 最後の情報ボックスのマージンを削除 */
+        }
+
+        .info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        p.sns_share {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+            font-size: 12px;
+        }
+
+        .button-container {
+            display: flex;
+        }
+
+        .button-container button {
+            margin-right: 10px; /* ボタン間の間隔を調整する場合に追加 */
+        }
+
+        button.reset-button {
+            display: block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #f0f0f0; /* Set the background color to a lighter gray */
+            color: #333; /* Set the text color to a dark shade */
+            border: 1px solid #ccc; /* Add a light gray border */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add smooth transition on hover */
+        }
+
+        button.reset-button:hover {
+            background-color: #ddd; /* Set the hover background color to a slightly darker gray */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0FBFSNXKE8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0FBFSNXKE8');
+</script>
+
+    <h1>追跡番号リンク作成</h1>
+
+    <div class="info">
+        <p>サイトのアドレスが「trackings.ne.jp」に変更されました。<br>ブックマーク等の変更をお願い致します。<a id="hideButton" onclick="hideInfo()">非表示</a></p>
+    </div> 
+
+    <div id="info-container">
+        <div class="info">
+            <a href="https://www.trackings.jp/shortcut/" target="_blank" rel="noopener">iPhone ショートカット版</a>
+        </div>
+        <div class="info">
+            <a href="https://www.trackings.jp/extension/" target="_blank" rel="noopener">Chrome拡張機能版</a>
+        </div>
+    </div>
+    <hr>
+    <label for="trackingNumber">追跡番号を入力してください：</label>
+    <input type="text" id="trackingNumber" placeholder="xxxx-xxxx-xxxx" list="trackingNumbersList" onkeypress="handleKeyPress(event)">
+    <datalist id="trackingNumbersList"></datalist>
+    <div class="button-container">
+        <button onclick="generateLinks()">リンクを作成</button>
+        <button onclick="pasteFromClipboard()">クリップボードから追跡番号を貼り付け</button>
+    </div>
+    <button class="reset-button" onclick="resetTrackingNumber()">追跡番号リセット</button>
+    <br><br>
+    <div id="links"></div>
+
+    <script>
+        if('serviceWorker' in navigator){
+        	navigator.serviceWorker.register('/serviceworker.js').then(function(){
+	        	console.log("Service Worker is registered!!");
+        	});
+        }
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        function generateLinks() {
+            var trackingNumber = document.getElementById("trackingNumber").value.trim();
+
+            if (trackingNumber === "") {
+                alert("追跡番号を入力してください。");
+                return;
+            }
+
+            var escapeTrackingNumber = document.createElement('div');
+            escapeTrackingNumber.innerText = trackingNumber;
+            trackingNumber = escapeTrackingNumber.innerHTML;
+
+            var savedTrackingNumbers = JSON.parse(localStorage.getItem('savedTrackingNumbers'));
+
+            // Check if savedTrackingNumbers is null or undefined
+            if (!savedTrackingNumbers) {
+                savedTrackingNumbers = [];
+            }
+
+            // Add the new tracking number to the array and save it to local storage
+            if (!savedTrackingNumbers.includes(trackingNumber)) {
+                savedTrackingNumbers.push(trackingNumber);
+                saveTrackingNumbers(savedTrackingNumbers);
+            }
+
+            var japanPostURL = "https://trackings.post.japanpost.jp/services/srv/search/?requestNo1=" + trackingNumber + "&search=追跡スタート";
+            var yamatoURL = "http://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=" + trackingNumber;
+            var sagawaURL = "http://k2k.sagawa-exp.co.jp/p/web/okurijosearch.do?okurijoNo=" + trackingNumber;
+            var fukutsuURL = "https://corp.fukutsu.co.jp/situation/tracking_no_hunt/" + trackingNumber;
+            var seinoURL = "https://track.seino.co.jp/cgi-bin/gnpquery.pgm?GNPNO1=" + trackingNumber;
+            var fedexURL = "http://www.fedex.com/Tracking?tracknumbers=" + trackingNumber;
+            var dhlURL = "http://www.dhl.com/cgi-bin/tracking.pl?AWB=" + trackingNumber;
+            var upsURL = "http://wwwapps.ups.com/WebTracking/track?loc=ja_JP&trackNums=" + trackingNumber;
+
+            var linksDiv = document.getElementById("links");
+            linksDiv.innerHTML = ``;
+            if (trackingNumber.length >= 11 && trackingNumber.length <= 13 || 1 === 1) {
+                linksDiv.innerHTML += `<p><a href="${japanPostURL}">日本郵便の荷物 ${trackingNumber} を追跡</a></p>`;
+            }
+            if (trackingNumber.length >= 11 && trackingNumber.length <= 12 || 1 === 1) {
+                linksDiv.innerHTML += `<p><a href="${yamatoURL}">ヤマト運輸の荷物 ${trackingNumber} を追跡</a></p>`;
+            }
+            if (trackingNumber.length >= 10 && trackingNumber.length <= 12 || 1 === 1) {
+                linksDiv.innerHTML += `<p><a href="${sagawaURL}">佐川急便の荷物 ${trackingNumber} を追跡</a></p>`;
+            }
+            if (trackingNumber.length >= 10 && trackingNumber.length <= 11 || 1 === 1) {
+                linksDiv.innerHTML += `<p><a href="${fukutsuURL}">福山通運の荷物 ${trackingNumber} を追跡</a></p>`;
+            }
+            if (trackingNumber.length >= 10 && trackingNumber.length <= 12 || 1 === 1) {
+                linksDiv.innerHTML += `<p><a href="${seinoURL}">西濃運輸の荷物 ${trackingNumber} を追跡</a></p>`;
+            }
+
+            // パラメータを変更する
+
+            var url = new URL(window.location.href);
+            var params = new URLSearchParams(url.search);
+            params.set('trackingNumber', trackingNumber);
+
+            url.search = params.toString();
+            window.history.replaceState({}, '', url.toString());
+            
+            //var url = window.location.href.split('?')[0];
+            //window.history.replaceState({}, '', url + '?trackingNumber=' + trackingNumber);
+        }
+
+        // ページが読み込まれた時にURLのクエリパラメータを取得し、追跡番号があれば自動的にリンクを作成する
+        window.onload = function() {
+            var urlTrackingNumber = getParameterByName('trackingNumber');
+            if (urlTrackingNumber) {
+                document.getElementById("trackingNumber").value = urlTrackingNumber;
+                generateLinks();
+
+            }
+            var savedTrackingNumbers = JSON.parse(localStorage.getItem('savedTrackingNumbers')) || [];
+            var datalist = document.getElementById("trackingNumbersList");
+            datalist.innerHTML = savedTrackingNumbers.map(number => `<option value="${number}"></option>`).join('');
+
+            // お知らせを表示しない条件判定
+            var utm_source = getParameterByName('utm_source');
+            var utm_medium= getParameterByName('utm_medium');
+            
+            // Chrome拡張機能からの表示
+            if(utm_source == 'extension' && ( utm_medium == 'popup' || utm_medium == 'menu')){
+                document.getElementById("info-container").innerHTML = "";
+            }
+            // Appleショートカット・WEBアプリからの表示
+            if(utm_source == 'apple' && ( utm_medium == 'shortcut' || utm_medium == 'pwa')){
+                document.getElementById("info-container").innerHTML = "";
+            }
+
+var value1 = localStorage.getItem('addressinfo');
+
+if(value1 == 'none'){
+var infoContainer = document.querySelector(".info");
+infoContainer.style.display = "none";
+}
+
+        };
+
+        // Clipboard APIを使ってクリップボードの内容を自動的にテキストボックスに張り付ける
+        document.addEventListener('paste', function(event) {
+            event.preventDefault(); // デフォルトの貼り付け動作を無効にする
+            var clipboardData = event.clipboardData || window.clipboardData;
+            var pastedData = clipboardData.getData('Text');
+            document.getElementById("trackingNumber").value = pastedData;
+            generateLinks(); // クリップボードから貼り付け後にリンクを作成
+        });
+
+        function pasteFromClipboard() {
+            navigator.clipboard.readText().then(function(pastedData) {
+            document.getElementById("trackingNumber").value = pastedData;
+            generateLinks(); // クリップボードから貼り付け後にリンクを作成
+            }).catch(function(error) {
+                console.error('Failed to read clipboard contents: ', error);
+            });
+        }
+
+        function handleKeyPress(event) {
+            // Check if the pressed key is the "Enter" key (key code 13)
+            if (event.keyCode === 13) {
+                generateLinks(); // Call the generateLinks function
+            }
+        }
+
+        function resetTrackingNumber() {
+            // Reset the tracking number input field
+            document.getElementById("trackingNumber").value = "";
+            // Clear the links div
+            document.getElementById("links").innerHTML = "";
+            // Remove the tracking number from the URL query parameter
+            var url = window.location.href.split('?')[0];
+            window.history.replaceState({}, '', url);
+
+            localStorage.removeItem('savedTrackingNumbers');
+        }
+
+        function saveTrackingNumbers(trackingNumbers) {
+            localStorage.setItem('savedTrackingNumbers', JSON.stringify(trackingNumbers));
+        }
+
+function hideInfo() {
+    var infoContainer = document.querySelector(".info");
+    if (infoContainer) {
+        infoContainer.style.display = "none";
+    }
+
+localStorage.setItem('addressinfo', 'none');
+}
+    </script>
+
+<hr>
+<center>
+<!-- admax -->
+<div class="admax-switch" data-admax-id="cb9470202d3cb195c66b99f4e821d563" style="display:inline-block;"></div>
+<script type="text/javascript">
+(admaxads = window.admaxads || []).push({admax_id: "cb9470202d3cb195c66b99f4e821d563",type: "switch"});</script>
+<script type="text/javascript" charset="utf-8" src="https://adm.shinobi.jp/st/t.js" async></script>
+<!-- admax -->
+</center>
+
+    <div class="social-button icon-only circle" style="text-align: center;">
+        <p class="sns_share">SNSでシェアする<p/>
+        <ul>
+            <li class="twitter-tweet"><a href="" target="_blank" rel="nofollow noopener noreferrer"></a></li>
+            <li class="facebook-share"><a href="" target="_blank" rel="nofollow noopener noreferrer"></a></li>
+            <!-- <li class="instagram-follow"><a href="https://www.instagram.com/ユーザー名?ref=badge" target="_blank" rel="nofollow noopener noreferrer"></a></li> -->
+            <li class="hatena-bookmark"><a href="" target="_blank" rel="nofollow noopener noreferrer"></a></li>
+            <li class="pocket-save"><a href="" target="_blank" rel="nofollow noopener noreferrer"></a></li>
+            <li class="line-send"><a href="" target="_blank" rel="nofollow noopener noreferrer"></a></li>
+        </ul>
+    </div>
+
+
+    <footer>
+<form action="https://sitesealinfo.pubcert.jprs.jp/SiteSealReference" name="SiteSealReference" method="post" target="_blank">
+<!--お客様の証明ページを別ウィンドウにて開きます。-->
+  <input type="image" name="Sticker" src="jprs_siteseal_DV/jprs_siteseal_100x42_DV.png" alt="クリックして証明書の内容をご確認ください。" oncontextmenu="return false;" />
+  <!--ダウンロードしたサイトシール画像のパス名を指定します。-->
+  <input type="hidden" name="certificateCn" value="*.trackings.ne.jp" />
+  <input type="hidden" name="certificateClass" value="DV" />
+  <!--証明書のコモンネーム及び証明書種別（DVもしくはOV）を指定します。-->
+</form>
+        &copy; 2023 trackings.jp All rights reserved.
+    </footer>
+</body>
+</html>
